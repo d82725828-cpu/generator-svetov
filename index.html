@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор цветов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🎨 Генератор цветов</h1>
+        <p class="subtitle">Создавай красивые цветовые комбинации</p>
+
+        <div class="color-preview" id="preview"></div>
+
+        <div class="hex-code" id="hexCode">#667EEA</div>
+
+        <div class="buttons">
+            <button class="generate" id="generateButton">
+                🎲 Новый цвет
+            </button>
+
+            <button class="copy" id="copyButton">
+                📋 Копировать
+            </button>
+        </div>
+
+        <input
+            type="color"
+            class="color-picker"
+            id="colorPicker"
+            value="#667eea"
+            aria-label="Выбрать цвет"
+        >
+
+        <button class="save-button" id="saveButton">
+            ❤️ Сохранить цвет
+        </button>
+
+        <h3 class="section-title">🌈 Цветовая палитра</h3>
+        <div class="palette" id="palette"></div>
+
+        <h3 class="section-title">⭐ Избранные цвета</h3>
+        <div class="saved-colors" id="savedColors"></div>
+
+        <p class="notification" id="notification"></p>
+
+    </main>
+
+    <script src="app.js">
+    </script>
+
+</body>
+</html>
